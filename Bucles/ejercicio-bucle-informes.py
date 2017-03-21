@@ -1,5 +1,6 @@
 # coding:utf-8
-#Vijular donde se incrementa
+#Vigilar donde se incrementa
+#Bucle; hasta que sea 2016; tambien puede ser un for
 sortir=False
 anyo = 2010
 while sortir== False:
