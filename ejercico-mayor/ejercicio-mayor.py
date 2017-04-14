@@ -11,5 +11,5 @@ if numero1<numero2:
 else :
 	if numero1>numero2:
 		print "El numero", numero1, "es mas grande que el numero" ,numero2
-	else: 
+	else:
 		print "Los numeros son iguales"
