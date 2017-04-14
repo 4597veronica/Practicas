@@ -1,6 +1,5 @@
 # coding:utf-8
 # Possibilitats: PE, PA, TI
-# Total 9: 3 empat, 6 guanyador
 # jugador1 humà
 # jugador2 machine 
 
@@ -30,7 +29,7 @@ if (jugador1==jugador2):
 	print "Empat"
 	
 else: # 6 combinacions
-	# Guanya jugador1 (3 combinacions)
+	# Guanya jugador1 (5 combinacions)
 	if ( (jugador1=="PE" and (jugador2=="TI" or jugador2=="LA")) or
 	     (jugador1=="PA" and (jugador2=="PE" or jugador2=="SP" )) or
 	     (jugador1=="TI" and (jugador2=="PA" or jugador2=="LA")) or
@@ -40,7 +39,7 @@ else: # 6 combinacions
 		print "Mi jugada es: ",jugador2
 		print "Tu guanyes!!!!!"
 		
-	else: # Guanya jugador2 (3 combinacions)
+	else: # Guanya jugador2 (5 combinacions)
 		print "Mi jugada es: ",jugador2
 		print "Ets un .... has perdut !!!!"
 		
