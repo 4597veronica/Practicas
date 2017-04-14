@@ -2,7 +2,7 @@
 # Possibilitats: PE, PA, TI
 # Total 9: 3 empat, 6 guanyador
 # jugador1 humà
-# jugador2 machine
+# jugador2 machine 
 
 from random import randint
 
