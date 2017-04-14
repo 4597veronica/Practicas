@@ -26,8 +26,7 @@ if (jugador1==jugador2):
 	
 else: # 6 combinacions
 	# Guanya jugador1 (3 combinacions)
-	if (jugador1>jugador2
-	   ):
+	if (jugador1>jugador2):
 		print "Mi jugada es: ",jugador2
 		print "Tu jugada es: ",jugador1
 		print "Tu guanyes!!!!!"
