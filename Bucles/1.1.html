@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+	<body>
+
+			<!--Folmularis
+			Realiza una pagina que implementa una calculadora aritmetica
+			mediente una tabla y un folmulario-->
+			
+			<form name="Calc">
+				<table border="4">
+					<tr>
+						<td><input type="text" name="Input" size="18"></td>
+					</tr>
+					<tr>	
+						<td>
+							<input type="button" name="uno" value="1" OnClick="Calc.Input.value += '1' ">	
+							<input type="button" name="dos" value="2" OnClick="Calc.Input.value += '2' ">	
+							<input type="button" name="tres" value="3" OnClick="Calc.Input.value += '3' ">	
+							<input type="button" name="mas" value="+" OnClick="Calc.Input.value += '+' ">	
+							<br>
+							<input type="button" name="cuatro" value="4" OnClick="Calc.Input.value += '4' ">	
+							<input type="button" name="cinco" value="5" OnClick="Calc.Input.value += '5' ">	
+							<input type="button" name="seis" value="6" OnClick="Calc.Input.value += '6' ">	
+							<input type="button" name="menos" value="-" OnClick="Calc.Input.value += '-' ">	
+							<br>
+							<input type="button" name="siete" value="7" OnClick="Calc.Input.value += '7' ">	
+							<input type="button" name="ocho" value="8" OnClick="Calc.Input.value += '8' ">	
+							<input type="button" name="nueve" value="9" OnClick="Calc.Input.value += '9' ">	
+							<input type="button" name="por" value="X" OnClick="Calc.Input.value += '*' ">	
+							<br>
+							<input type="button" name="clear" value="C" OnClick="Calc.Input.value = ' ' ">	
+							<input type="button" name="cero" value="0" OnClick="Calc.Input.value += '0' ">	
+							<input type="button" name="igual" value="=" OnClick="Calc.Input.value = eval(Calc.Input.value)">	
+							<input type="button" name="div" value="/" OnClick="Calc.Input.value += '/'">
+							
+							
+						</td>	
+					</tr>		
+				</table>
+			</form>
+			
+	
+	</body>
+</html>
