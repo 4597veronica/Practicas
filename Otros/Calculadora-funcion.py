@@ -19,6 +19,7 @@ def menu():
 	print "4.-Dividir"
 
 ####################################FUNCION MULTIPLICACION##########
+""" En estas 'funciones' ya muestro el resultado directamente"""
 def multiplicacion():
 	total=numero1*numero2
 	print "El numero es" , total
@@ -43,6 +44,7 @@ while sortir== False:
 	if tecla =="x" or tecla=="X":
 		sortir = True 
 	else:
+		""" Como ya he hecho que se muestre el resultado en las funciones, solo las llamo  """
 		numero1=input("Introduce un numero ")
 		numero2=input("Introduce un numero ")
 		if tecla=="1":
