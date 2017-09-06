@@ -1,8 +1,12 @@
 # coding:utf-8
-import locale
-print(locale.getpreferredencoding())
+"""Este programa simula una agenda para la terminal. Su función es mostrar los meses, el horario, 
+y las tareas que hay por hacer, además de crearlas"""
+
 ######################VARIABLES#########################################
+import locale
+
 import datetime
+sortir=False
      ################LISTA_CALENDARIO###############
 """Para crear la lista que necesita el for"""
 def my_range(inici, fi, increment):
@@ -10,7 +14,7 @@ def my_range(inici, fi, increment):
 		"""Retorna l'element actual del rang (llista)"""
 		yield inici
 		inici = inici + increment
-      ########WALK################
+     
 
 ####CALENDARIO######################################
 
@@ -68,9 +72,9 @@ def calendario():
 					 una cifra tambien escribira un espacio """
 		print""
 
-##################################WALK##################################
+#################################VER_TAREAS##############################
 def vertareas():
-	import os #tENEMOS QUE IMPORTATLO AQUI PARA QUE NO DE PROBLEMAS
+	import os #TENEMOS QUE IMPORTATLO AQUI PARA QUE NO DE PROBLEMAS
 	from datetime import datetime	
 	ruta_app = os.getcwd()
 	total = 0
@@ -93,34 +97,59 @@ def vertareas():
 				if not elemento == "agenda.py":
 					print(linea)
 					print(elemento)
+	tarea=raw_input("escribe el nombre de la tarea ")
+	archivo = open(tarea , 'r')
+	horario2=archivo.read()
+	print horario2
 
-#########################PROGRAMA_PRINCIPAL#############################
-print "1-Ver el horario"
-print "2-Ver el calendario"
-print "3-Ver tareas"
-print "4-Crear tareas"
-	
-opciones=input("¿Que desea hacer? ")
 
-if opciones == 1:
-	archivo = open('horario.txt' , 'r')
-	horario=archivo.read()
-	print horario
-	
-if opciones == 2:
-	calendario()
-	
-if opciones == 3:
-	vertareas()
-	
-if opciones == 4:
+#############################CREAR_TAREA################################
+def crear_tarea():
 	fecha=raw_input("Introduce la fecha de la tarea ")
 	archivo = open(fecha, 'w')
 	cadena1=raw_input("Introduzca la asignatura")
 	cadena3=raw_input("Introduzca la tarea")
 	tarea_crear=archivo.write(cadena1 + '\n'  +  cadena3 + '\n' )
 	
+############################VER_HORARIO##################################
+def: ver_horario():
+	archivo = open('horario.txt' , 'r')
+	horario=archivo.read()
+	print horario
+		
+
+
+#########################PROGRAMA_PRINCIPAL#############################
+print "0-Salir"
+print "1-Ver el horario"
+print "2-Ver el calendario"
+print "3-Ver tareas"
+print "4-Crear tareas"
+	
+
+
+while sortir== False:
+	opciones=input("¿Que desea hacer? ")
+  
+	if opciones == 1:
+		ver_horario()
+		
+		
+	if opciones == 2:
+		calendario()
+		
+	if opciones == 3:
+		vertareas()
+		
+		
+	if opciones == 4:
+		crear_tarea():
+		
+	if opciones ==0:
+		sortir = True 
+		
 ############################################################
+	
 	
 	
  
